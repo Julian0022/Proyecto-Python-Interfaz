@@ -14,6 +14,7 @@ def ready():
 		R = float(ER.get())
 		C = float(EC.get())
 		CasoC = RCfuncion(Vo,Vs,R,C)
+		ImagenGRC['file'] = 'Funcion/RC_foto.png'
 		EcuacionFormula['text'] = f'{CasoC}  [V]'
 		EcuacionImagen['image'] = ImagenGRC
 	else:
@@ -22,6 +23,7 @@ def ready():
 		R = float(ER.get())
 		L = float(EC.get())
 		CasoL = RLfuncion(Io,Is,R,L)
+		ImagenGRL['file'] = 'Funcion/RL_foto.png'
 		EcuacionFormula['text'] = f'{CasoL}  [A]'
 		EcuacionImagen['image'] = ImagenGRL
 
@@ -86,7 +88,7 @@ texintro.config(bg='white',font=('Arial', 13))
 ImagenGRC = PhotoImage(file='Funcion/RC_foto.png')
 ImagenGRL = PhotoImage(file='Funcion/RL_foto.png')
 Imagen = PhotoImage(file='Funcion/output.png')
-EcuacionImagen = Label(mainFrame, image=Imagen)
+EcuacionImagen = Label(mainFrame, image=Imagen, bg='white')
 EcuacionImagen.grid(row=4, column=0, sticky='sn', padx=20, pady=10)
 
 #Parte derecha

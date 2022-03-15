@@ -7,7 +7,7 @@ def RCfuncion(Vo,Vs,R,C):
     x = np.linspace(0,5*T,100)
     y= (Vo*(e)**-(x/T))+(Vs*(1-(e)**-(x/T)))
 
-    x2 = np.linspace(-10,0,10)
+    x2 = np.linspace(-0.000005,0,10)
     y2 = [Vo]*10
 
     fig = plt.figure()

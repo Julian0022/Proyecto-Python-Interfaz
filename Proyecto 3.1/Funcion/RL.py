@@ -7,7 +7,7 @@ def RLfuncion(Io,Is,R,L):
     x = np.linspace(0,5*T,100)
     y= (Io*(e)**-(x/T))+(Is*(1-(e)**-(x/T)))
 
-    x2 = np.linspace(-10,0,10)
+    x2 = np.linspace(-0.001,0,10)
     y2 = [Io]*10
 
     fig = plt.figure()
